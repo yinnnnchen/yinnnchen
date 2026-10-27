@@ -50,16 +50,12 @@ img {
     font-family: var(--font-mono) !important;
 }
 
-/* Subtle top decorative bar */
 #inner-nav {
     height: 4px;
     background: linear-gradient(90deg, #0284c7, #38bdf8);
     width: 100%;
 }
 
-/* ==========================================================================
-   Layout Containers (Desktop Default)
-   ========================================================================== */
 #container {
     position: relative;
     display: flex;
@@ -69,10 +65,6 @@ img {
     gap: 40px;
     align-items: flex-start;
 }
-
-/* ==========================================================================
-   Profile Sidebar
-   ========================================================================== */
 #profile {
     flex: 0 0 280px;
     width: 280px;
@@ -84,7 +76,6 @@ img {
     flex-direction: column;
 }
 
-/* Profile Photo */
 #image {
     position: relative;
     width: 88px;
@@ -126,7 +117,6 @@ img {
     opacity: 1;
 }
 
-/* Name & Title */
 #name {
     font-size: 26px;
     line-height: 1.25;
@@ -159,7 +149,6 @@ img {
     margin-top: 3px;
 }
 
-/* Social Links */
 #social-links {
     display: flex;
     align-items: center;
@@ -190,7 +179,6 @@ img {
     font-size: 16px;
 }
 
-/* Edit Intro Button */
 #edit-intro {
     display: inline-block;
     color: var(--accent-blue);
@@ -203,7 +191,6 @@ img {
     opacity: 0.75;
 }
 
-/* Divider */
 .profile-divider {
     border: 0;
     height: 1px;
@@ -212,7 +199,6 @@ img {
     width: 100%;
 }
 
-/* About Header */
 #about {
     position: relative;
     display: flex;
@@ -238,7 +224,6 @@ img {
     transform: scale(1.1);
 }
 
-/* Profile Details */
 .profile-details {
     display: flex;
     flex-direction: column;
@@ -275,9 +260,6 @@ img {
     color: var(--accent-blue-hover);
 }
 
-/* ==========================================================================
-   Info Cards (Main Column)
-   ========================================================================== */
 #info-cards {
     flex: 1;
     min-width: 0;
@@ -311,7 +293,6 @@ img {
     font-size: 18px;
 }
 
-/* Biography Text */
 .bio-text {
     font-size: 16px;
     line-height: 1.85;
@@ -322,7 +303,6 @@ img {
     max-width: 72ch;
 }
 
-/* List Items (Work Experience & Workshop) */
 .item-list {
     list-style: none;
     display: flex;
@@ -426,11 +406,6 @@ img {
     color: var(--accent-blue) !important;
 }
 
-/* ==========================================================================
-   Responsive Web Design (RWD)
-   ========================================================================== */
-
-/* Tablets (max-width: 992px) */
 @media screen and (max-width: 992px) {
     #container {
         gap: 28px;
@@ -449,7 +424,6 @@ img {
     }
 }
 
-/* Mobile & Small Tablets (max-width: 768px) */
 @media screen and (max-width: 768px) {
     #container {
         flex-direction: column;
@@ -541,7 +515,6 @@ img {
     }
 }
 
-/* Small Screen Phones (max-width: 480px) */
 @media screen and (max-width: 480px) {
     #container {
         margin: 12px auto;
