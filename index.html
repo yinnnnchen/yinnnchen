@@ -1,78 +1,119 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>persnoal web</title>
+    <title>陳子印 | 個人履歷網站</title>
+    <!-- Google Fonts: Chiron GoRound TC & Roboto Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="inner-nav"></div>
     <div id="container">
-        <div id="profile">
-            <div id="image">
-                <img id="profile-photo" src="img/profilimg.JPEG" alt="Profile-Image">
-                <a href="#"><i class="fas fa-pen stroke-transparent"></i></a>
-            </div>
-            <p id="name">陳子印<br><span id="email">Chen Tz Yin</span></p>
-            <p id="designation">Junior<br><span id="college">Southern Taiwan University of Science and Technology</span></p>
-            <div id="social-links"><a href="#"><i class="fab fa-facebook-f stroke-transparent"></i></a><a><i class="fab fa-twitter stroke-transparent"></i></a><a><i class="fab fa-linkedin-in stroke-transparent"></i></a><a><i class="fab fa-github stroke-transparent"></i></a></div>
-            <a id="edit-intro" href="#"><i class="fas fa-pen-alt blue"></i></a>
-            <hr width="100%">
-            <div id="about">
-                <p style="display:inline;">About</p>
-                <a href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a>
-            </div>
-            <p id="year-graduation">Expected Year of Graduation<br><strong>June, 2027</strong></p>
-            <p id="education">Education<br><strong>Southern Taiwan University of Science and Technology</strong></p>
-            <p id="email" >Email<br><strong>4B2G0117@stust.edu.tw</strong></p>
-            <p id="skill">Skills<br><strong>HTML/CSS, JavaScript, Python</strong></p>
-        </div>
-        <div id="info-cards">
-            <div class="card">
-                <p><i class="fas fa-graduation-cap stroke-transparent"></i>&nbsp;&nbsp;&nbsp;自傳</p>
+        <!-- Profile Sidebar -->
+        <aside id="profile">
+            <div class="profile-header-wrap">
+                <div id="image">
+                    <img id="profile-photo" src="img/profilimg.JPEG" alt="陳子印的大頭貼">
+                    <a href="#" aria-label="更換大頭貼"><i class="fas fa-pen stroke-transparent"></i></a>
+                </div>
                 
-                <ul>
-                    <p class="tags">我叫陳子印，目前就讀南台科技大學資訊工程學三年級。<br>我是一個有責任感且願意持續精進自己的人，面對問題會主動查找資料並嘗試解決，不輕易放棄。
-                        <br>同時具備良好的時間管理能力，能夠在多項任務中安排優先順序。
-                        <br>    對於新技術保持開放態度，樂於學習並應用在實際情境中。
-                        <br>在技術方面，我具備Python、基礎網頁開發（HTML、CSS、JavaScript）以及簡單後端概念的能力，
-                        並持續學習相關技術。對於人工智慧與情緒辨識領域也有高度興趣，曾規劃相關專題方向。
-                        此外，具備基本英文閱讀能力，能夠查閱技術文件與學習資源。</p>
-                    <!--li><p class="tags"><br><span><span></span></span></p>
-                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
-                    <li><p class="tags"><br><span><span></span></span></p>
-                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
-                    <li><p class="tags"><br><span><span></span></span></p>
-                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li-->
-                </ul>
-                <!--a href="#">+ Add new</a-->
+                <div class="profile-title-group">
+                    <h1 id="name">陳子印<span id="sub-name">Chen Tz Yin</span></h1>
+                    <p id="designation"><span id="college">Southern Taiwan University of Science and Technology</span></p>
+                    <div id="social-links">
+                        <a href="https://github.com/yinnnnchen" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
             </div>
-            <div class="card">
-                <p><i class="fas fa-briefcase stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Work Experience</p>
-                <ul>
-                    <li><p class="tags">三商電腦-暑期工讀生<br><span>2024(7月-8月) 負責檢修無線電</span></p>
-                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li></li>
-                    <li><p class="tags">三商電腦-暑期工讀生<br><span>2025(7月-8月) 負責檢修無線電</span></p>
-                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li></li>
-                </ul>
-                <!--a href="#">+ Add work experience, including contracts and internships</a-->
+            
+            <hr class="profile-divider">
+            
+            <div id="about">
+                <p>About</p>
             </div>
-            <div class="card">
-                <p><i class="fas fa-briefcase stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Workshop</p>
-                <ul>
-                    <li><a class="tags" href="https://github.com/yinnnnchen" target="_blank">GitHub<br></a></span></p>
-                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
-                    <li><a class="tags" href="https://yinnnnchen.github.io/WaterPuzzle/" target="_blank">小遊戲-WaterPuzzle<br></a></span></p>
-                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
-                    <li><a class="tags" href="https://yinnnnchen.github.io/boom/" target="_blank">小遊戲-踩地雷<br></a></span></p>
-                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
-                    <li><a class="tags" href="https://aidiary-tap6.onrender.com/" target="_blank">期末專題<br></a></span></p>
-                        <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a></li>
-                </ul>
-                <!--a href="#">+ Add workshops attended</a-->
+            
+            <div class="profile-details">
+                <div class="detail-item" id="year-graduation">
+                    <span class="detail-label">Expected Year of Graduation</span>
+                    <strong class="font-mono">June, 2027</strong>
+                </div>
+                <div class="detail-item" id="education">
+                    <span class="detail-label">Education</span>
+                    <strong>Southern Taiwan University of Science and Technology</strong>
+                </div>
+                <div class="detail-item" id="email">
+                    <span class="detail-label">Email</span>
+                    <strong><a class="font-mono" href="mailto:4B2G0117@stust.edu.tw">4B2G0117@stust.edu.tw</a></strong>
+                </div>
+                <div class="detail-item" id="skill">
+                    <span class="detail-label">Skills</span>
+                    <strong class="font-mono">HTML/CSS, JavaScript, Python</strong>
+                </div>
             </div>
-        </div>
+        </aside>
+
+        <main id="info-cards">
+            <!-- Biography Card -->
+            <section class="card">
+                <h2><i class="fas fa-graduation-cap stroke-transparent"></i>&nbsp;&nbsp;&nbsp;自傳</h2>
+                <div class="bio-text">
+                    <p>我叫陳子印，目前就讀南台科技大學資訊工程系。</p>
+                    <p>我是一個有責任感且願意持續精進自己的人，面對問題會主動查找資料並嘗試解決，不輕易放棄。同時具備良好的時間管理能力，能夠在多項任務中安排優先順序。對於新技術保持開放態度，樂於學習並應用在實際情境中。</p>
+                    <p>在技術方面，我具備 Python、基礎網頁開發（HTML、CSS、JavaScript）以及簡單後端概念的能力，並持續學習相關技術。對於人工智慧與情緒辨識領域也有高度興趣，曾規劃相關專題方向。此外，具備基本英文閱讀能力，能夠查閱技術文件與學習資源。</p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2><i class="fas fa-briefcase stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Work Experience</h2>
+                <ul class="item-list">
+                    <li>
+                        <div class="tags">
+                            <span class="title">三商電腦 - 暑期工讀生</span>
+                            <span class="sub-info font-mono">2024 (7月 - 8月) 負責檢修無線電</span>
+                        </div>
+                        </li>
+                    <li>
+                        <div class="tags">
+                            <span class="title">三商電腦 - 暑期工讀生</span>
+                            <span class="sub-info font-mono">2025 (7月 - 8月) 負責檢修無線電</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2><i class="fas fa-laptop-code stroke-transparent"></i>&nbsp;&nbsp;&nbsp;Workshop</h2>
+                <ul class="item-list workshop-list">
+                    <li>
+                        <a class="tags link-item" href="https://github.com/yinnnnchen" target="_blank" rel="noopener noreferrer">
+                            <span class="title"><i class="fab fa-github"></i> <span class="font-mono">GitHub</span></span>
+                            <i class="fas fa-arrow-up-right-from-square external-icon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tags link-item" href="https://yinnnnchen.github.io/WaterPuzzle/" target="_blank" rel="noopener noreferrer">
+                            <span class="title"><i class="fas fa-gamepad"></i> 小遊戲 - <span class="font-mono">WaterPuzzle</span></span>
+                            <i class="fas fa-arrow-up-right-from-square external-icon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tags link-item" href="https://yinnnnchen.github.io/boom/" target="_blank" rel="noopener noreferrer">
+                            <span class="title"><i class="fas fa-bomb"></i> 小遊戲 - 踩地雷</span>
+                            <i class="fas fa-arrow-up-right-from-square external-icon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="tags link-item" href="https://aidiary-tap6.onrender.com/" target="_blank" rel="noopener noreferrer">
+                            <span class="title"><i class="fas fa-book-bookmark"></i> 期末專題</span>
+                            <i class="fas fa-arrow-up-right-from-square external-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </main>
     </div>
 </body>
 </html>
